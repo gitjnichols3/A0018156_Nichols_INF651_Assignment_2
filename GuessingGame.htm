@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <script>
+        let number = Math.floor(Math.random() * 10) + 1;
+        let guess = parseInt(prompt("Guess the secret number. Enter a whole number from 1 to 10: "));
+        while(guess != number){
+            guess = parseInt(prompt(guess + " is incorrect. Please try again. \nGuess the secret number. Enter a whole number from 1 to 10: ")); 
+        }
+
+        document.write("<h1>" + guess + " is correct! You guessed the secret number! Congratulations!</h1>");
+
+    </script>
+    
+</body>
+</html>
